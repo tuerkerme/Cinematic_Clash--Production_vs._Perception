@@ -50,6 +50,9 @@ Box plots were used to examine the distribution and spread of critical ratings a
 
 
 Histogram of the distribution of tomatometer ratings
+
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/54bc6dc9-ffb0-46b1-ac3b-54b4eccff248)
+
 ```
 import matplotlib.pyplot as plt
 data = df
@@ -73,6 +76,8 @@ The number of movies decreases gradually as rating decreases, with fewer films r
 
 
 Bar chart showing the average audience rating for each movie genre
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/a501252b-a735-4147-a78d-de7b32922c37)
+
 ```
 from collections import defaultdict
 import numpy as np
@@ -113,6 +118,8 @@ The notable variation in average ratings across genres highlights distinct audie
 
 
 Line chart showing the number of movies released each year.
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/9618ae28-2b8c-4b89-b69a-d985a3619b38)
+
 ```
 # Extracting the release year from the 'in_theaters_date' column
 data['streaming_release_date'] = pd.to_datetime(data['streaming_release_date'], errors='coerce').dt.year
@@ -137,6 +144,8 @@ Flagging any specific years with exceptionally high or low releases that warrant
 This analysis provides valuable insights into the dynamics of the movie industry, assisting in understanding industry trends, historical influences on film production, and potential future trajectories.
 
 Scatter plot to see if there's a correlation between the tomatometer rating (critics' rating) and the audience rating
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/442cc344-f683-4a4f-8fda-0259950d6f0b)
+
 ```
 # Scatter plot of tomatometer rating vs audience rating
 plt.figure(figsize=(10, 6))
@@ -163,6 +172,8 @@ This visualization helps elucidate the alignment (or lack thereof) between criti
 
 
 Box plot to examine the spread of runtime in minutes, which will give us insights into the typical length of movies
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/f9d6fccc-3c03-4285-a7de-629f4d9fce62)
+
 ```
 # Creating a box plot for movie runtimes
 plt.figure(figsize=(10, 6))
@@ -184,6 +195,8 @@ Any points falling outside the whiskers are considered outliers, indicating movi
 
 
 Scatter plot to examine the relationship between the runtime of movies and their audience ratings.
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/2e450815-ae41-4344-b034-d45f9adf9e22)
+
 ```
 # Scatter plot of runtime vs audience rating
 plt.figure(figsize=(10, 6))
@@ -210,6 +223,8 @@ This visualization highlights the limited predictability of audience satisfactio
 
 
 Bar chart showing the average tomatometer rating for movies produced by different studios
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/76c7a501-9144-4c47-8a3f-653306262053)
+
 ```
 # Grouping data by studio and calculating average tomatometer rating
 studio_ratings = data.groupby('production_company')['tomatometer_rating'].mean()
@@ -237,6 +252,8 @@ This graphical representation offers insights into the production companies that
 
 Scatter plot to observe the relationship between the tomatometer count and rating
 to see whether movies with more critic reviews tend to have higher or lower ratings.
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/36ed2128-4751-4394-ab27-01aff3b169b2)
+
 ```
 # Scatter plot of tomatometer count vs tomatometer rating
 plt.figure(figsize=(10, 6))
@@ -258,6 +275,8 @@ This observation suggests that movies with a higher volume of critic reviews ten
 The scattered plot underscores the presence of exceptions to this general trend. Movies with relatively few reviews can achieve high ratings, while those with a significant number of reviews can receive lower ratings. This highlights the limitations of solely relying on the number of critic reviews to gauge a movie's overall quality.
 
 Bar chart showing the number of movies in each genre
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/dbae9cb6-3a3e-46c2-a9fa-e6d4073f1541)
+
 ```
 from itertools import chain
 ​
@@ -276,6 +295,7 @@ plt.show()
 This genre distribution pattern could reflect prevalent trends in movie production, where studios and audiences consistently show preference for certain genres. Alternatively, the disparity could be attributed to the diverse nature of the dataset, encompassing a broader genre spectrum across different periods and geographical regions.
 
 The average audience rating for movies directed by different individuals
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/8c767198-9891-4109-86e2-0fefa87c7fd4)
 
 
 ```
@@ -304,6 +324,8 @@ These directors have demonstrated their ability to create films that resonate wi
 It is crucial to acknowledge that these averages are derived from the subset of movies included in the dataset, and the number of movies directed by each individual can vary.
 
 Line chart showing the average tomatometer rating and average audience rating for each year.
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/70d37c3c-88b3-4417-921d-f11744ee43aa)
+
 ```
 
 # Grouping data by release year and calculating average ratings
@@ -325,6 +347,8 @@ The line chart effectively illustrates the dynamic evolution of critic and audie
 This visualization allows for the identification of periods of significant change or stability in both metrics. By comparing the two lines, we can discern instances where critical and audience reception diverged or converged.
 
 Box plot - the distribution of tomatometer ratings across different movie genres
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/f61ee4bc-6a1f-42c7-8aa5-26a83e0c09c8)
+
 
 ```
 # Preparing data for box plots - splitting genres and associating them with tomatometer ratings
@@ -349,8 +373,10 @@ The median tomatometer rating (the line within each box) indicates the level of 
 The range and variability of tomatometer ratings (represented by the length of the boxes and whiskers) also vary across genres. Action and drama genres exhibit a narrower range, suggesting more consistent critical reception within these genres. Conversely, genres like comedy and horror display a wider range, indicating more diverse critical opinions.
 Outliers, represented by points outside the whiskers, highlight movies that deviate significantly from the overall critical reception within their respective genres. These outliers may represent critically acclaimed or panned films that stand out from the crowd.
 
-Type Markdown and LaTeX:  α2
- 
+
+ The bar chart highlights the top production companies whose movies consistently garner favorable audience ratings.
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/3b59487a-6c39-469a-9499-bde9b4f74532)
+
 ```
 # Grouping data by studio and calculating average audience rating
 studio_audience_ratings = data.groupby('production_company')['audience_rating'].mean()
@@ -372,12 +398,15 @@ plt.ylabel('Average Audience Rating')
 plt.show()
 ​
 ```
-The bar chart highlights the top production companies whose movies consistently garner favorable audience ratings.
+
+
 These production companies have demonstrated their ability to craft films that resonate with audiences, resulting in elevated audience ratings.
 It is crucial to acknowledge that these averages are derived from the subset of movies included in the dataset, and the number of movies produced by each studio can vary.
 This caveat emphasizes the need for caution when interpreting the results, considering the potential influence of the number of movies produced by each studio.
 
 Scatter plot to observe the relationship between the number of critic reviews (tomatometer count) and the number of audience ratings (audience count) for each movie
+![image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/126877b5-7c61-48e8-b274-138f496fd091)
+
 ```
 plt.figure(figsize=(10, 6))
 plt.scatter(data['tomatometer_count'], data['audience_count'], alpha=0.5, color='navy')
@@ -400,25 +429,31 @@ Some movies with relatively few critic reviews have garnered significant audienc
 This scatter plot effectively communicates the subtle connection between critic reviews and audience ratings, highlighting the variability in audience responses despite varying levels of critical attention.
 This visualization provides valuable insights into the dynamics between critic reviews and audience engagement, demonstrating that these two factors do not always correspond directly.
 
-Summary
+### Summary
 
 This analysis provided a detailed examination of the film industry, focusing on the production volumes and critical receptions of movies across major studios.
 Key findings included:
+
 Production Volume:
 Significant variations in the number of movies produced by different studios were observed.
 A diverse landscape emerged, with studios exhibiting distinct levels of production prolificacy.
+
 Critical Reception:
 The overall quality of movies from these studios was assessed through tomatometer ratings.
 The report highlighted the relationship between the number of movies a studio produces and the critical acclaim these movies receive.
+
 Quantity vs. Quality Correlation:
 Several studios showed a balance between producing a large number of movies and maintaining high quality standards.
 Other studios excelled in one area, either churning out a large number of movies or producing critically acclaimed films with lower production volumes.
+
 Industry Trends:
 The analysis shed light on broader trends in the film industry.
 It included the increasing importance of streaming platforms and changes in genre popularity over time.
+
 Data-Driven Insights:
 Various data visualization techniques were used to present a clear and comprehensive view of the film industry's landscape.
 These visualizations effectively communicated the key findings and allowed for a deeper understanding of the industry's intricacies.
+
 Overall Implications:
 The delicate balance between producing a large number of movies and maintaining high quality standards in terms of critical reception was underscored.
 The varying strategies of different studios were highlighted, providing a snapshot of the evolving dynamics within the film industry.
