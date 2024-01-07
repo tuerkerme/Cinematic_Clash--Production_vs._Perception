@@ -24,18 +24,18 @@ This comprehensive dataset served as the foundation for the subsequent analysis,
 Data Analysis
 ```
 df = pd.read_csv("/kaggle/input/rotten-tomatoes-movies-and-critic-reviews-dataset/rotten_tomatoes_movies.csv")
-```
+
 df.head()
-```
+
 df.info()
-```
+
 df.shape
-```
+
 df.describe()
-```
+
 print("\nMissing Values:")
 print(df.isnull().sum())
-```
+
 df.duplicated().sum() 
 print("\nDuplicate Rows:")
 print(df.duplicated().sum())
@@ -274,8 +274,10 @@ plt.show()
 ​
 ```
 This genre distribution pattern could reflect prevalent trends in movie production, where studios and audiences consistently show preference for certain genres. Alternatively, the disparity could be attributed to the diverse nature of the dataset, encompassing a broader genre spectrum across different periods and geographical regions.
-```
+
 The average audience rating for movies directed by different individuals
+
+
 ```
 # Grouping data by director and calculating average audience rating
 director_ratings = data.groupby('directors')['audience_rating'].mean()
@@ -295,14 +297,15 @@ plt.title('Average Audience Rating by Director (Top 20)')
 plt.xlabel('Director')
 plt.ylabel('Average Audience Rating')
 plt.show()
-​
-
+```​
+```
 This bar chart highlights the top directors whose movies have consistently garnered favorable audience ratings.
 These directors have demonstrated their ability to create films that resonate with audiences, resulting in elevated audience ratings.
 It is crucial to acknowledge that these averages are derived from the subset of movies included in the dataset, and the number of movies directed by each individual can vary.
 
 Line chart showing the average tomatometer rating and average audience rating for each year.
 ```
+
 # Grouping data by release year and calculating average ratings
 yearly_ratings = data.groupby('streaming_release_date').agg({'audience_rating': 'mean', 'tomatometer_rating': 'mean'})
 ​
@@ -317,11 +320,12 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ​
-
+```
 The line chart effectively illustrates the dynamic evolution of critic and audience ratings over the years.
 This visualization allows for the identification of periods of significant change or stability in both metrics. By comparing the two lines, we can discern instances where critical and audience reception diverged or converged.
 
 Box plot - the distribution of tomatometer ratings across different movie genres
+
 ```
 # Preparing data for box plots - splitting genres and associating them with tomatometer ratings
 expanded_data = data.drop('genres', axis=1).join(
@@ -344,7 +348,7 @@ This box plot showcasing tomatometer ratings across various genres unveils disti
 The median tomatometer rating (the line within each box) indicates the level of critical acclaim for each genre. While action and drama genres generally receive higher median ratings, genres like documentary and thriller tend to receive lower ratings.
 The range and variability of tomatometer ratings (represented by the length of the boxes and whiskers) also vary across genres. Action and drama genres exhibit a narrower range, suggesting more consistent critical reception within these genres. Conversely, genres like comedy and horror display a wider range, indicating more diverse critical opinions.
 Outliers, represented by points outside the whiskers, highlight movies that deviate significantly from the overall critical reception within their respective genres. These outliers may represent critically acclaimed or panned films that stand out from the crowd.
-```
+
 Type Markdown and LaTeX:  α2
  
 ```
