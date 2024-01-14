@@ -1,31 +1,42 @@
-
 ## Project Overview
 
-Title: Cinematic Clash Production vs. Perception
+### Title: Cinematic Clash: Production vs. Perception
 
-Objective: To conduct a thorough examination of the film industry's dynamics, including movie production trends, critical reception, audience preferences, and historical evolution.
+### Objective: 
 
-Tools Used: Power BI, a business intelligence tool that transforms raw data into meaningful insights through interactive visualizations.
+To conduct a thorough examination of the film industry's dynamics, including movie production trends, critical reception, audience preferences, and historical evolution.
 
-Scope of Analysis:
+### Tools Used: 
+
+Power BI, a business intelligence tool that transforms raw data into meaningful insights through interactive visualizations.
+
+### Scope of Analysis:
 
 Movie Production Trends: Analyze the number of films produced over time and identify leading production studios.
 
-Critical Reception: Assess the critical success of films and directors across various genres.
+### Critical Reception: 
 
-Audience Engagement: Study audience scores and preferences to understand viewer behaviors.
+Assess the critical success of films and directors across various genres.
 
-Directorial Impact: Evaluate the productivity and critical acclaim of directors in shaping the industry.
+### Audience Engagement: 
+
+Study audience scores and preferences to understand viewer behaviors.
+
+### Directorial Impact: 
+
+Evaluate the productivity and critical acclaim of directors in shaping the industry.
 
 Genre Popularity and Reception: Analyze the popularity and critical reception of different film genres.
 
-Data Sources:
+### Data Sources:
 
 A comprehensive dataset of movie information obtained from Rotten Tomatoes, including titles, genres, production studios, audience and critic scores, and counts.
 
-Significance: The findings will provide valuable insights for industry stakeholders, including producers, directors, investors, and marketers, to inform strategic decision-making and historical understanding.
+### Significance: 
 
-Anticipated Findings:
+The findings will provide valuable insights for industry stakeholders, including producers, directors, investors, and marketers, to inform strategic decision-making and historical understanding.
+
+### Anticipated Findings:
 
 Identifying patterns in movie production and success factors.
 
@@ -33,11 +44,11 @@ Understanding the correlation between critic and audience scores.
 
 Unveiling trends in the reception of different film genres.
 
-Intended Audience:
+### Intended Audience:
 
 Film industry stakeholders, including production companies, directors, marketing professionals, industry analysts, academia, and researchers.
 
-Data Analysis Framework:
+### Data Analysis Framework:
 
 Data preparation
 
@@ -47,20 +58,114 @@ Statistical analysis
 
 Hypothesis testing
 
-Visualizations:
+### Visualizations:
 
 Power BI visualizations will illustrate findings and support conclusions.
 
-Deliverables:
+### Deliverables:
 
 Comprehensive report detailing findings, supported by visualizations.
 
 Interactive Power BI dashboard for data exploration.
 
-Project Duration:
+### Project Duration: 1 week
 
-[Insert estimated duration here] weeks/months
-
-Report Structure:
+### Report Structure:
 
 Clear and organized structure for easy navigation and comprehension.
+
+
+## Introduction
+
+### Background
+
+The film industry, a cornerstone of entertainment and a powerful tool for cultural expression, has undergone a remarkable transformation throughout its history. Technological advancements, evolving content preferences, and the emergence of diverse distribution platforms have reshaped the industry landscape, demanding a deeper understanding of film popularity, critical reception, and audience engagement.
+
+### Rationale
+
+Critical reviews and audience perception hold immense sway over a movie's success. Platforms like Rotten Tomatoes have become influential arbiters of a film's reception, driving audience decisions and shaping industry trends. By analyzing data from these sources, we can extract valuable insights that inform future film projects and investments. This report delves into the intricate interplay of these factors, examining genre popularity, directorial influence, and studio production dynamics.
+
+### Objectives
+
+This analysis aims to achieve the following objectives:
+
+Uncover the volume and temporal trends of movie production.
+
+Evaluate critical reception and its correlation with audience scores.
+
+Assess the popularity of genres and their critical reception patterns.
+
+Investigate the impact of directors on film success.
+
+Provide data-driven insights for informed decision-making by industry stakeholders.
+
+## Methodology
+
+### Data Collection
+
+The dataset for this analysis was meticulously curated from Rotten Tomatoes, encompassing comprehensive information about movies listed on the platform, including titles, genres, production details, critic counts, audience scores, and more.
+
+### Data Analysis Tools
+
+Power BI, a powerful business intelligence tool, was employed as the primary tool for data visualization and analysis. Its ability to handle large datasets, create interactive visualizations, and facilitate user-friendly exploration made it an ideal choice for this project.
+
+### Data Analysis Techniques
+
+A combination of quantitative and qualitative methods was employed to extract meaningful insights:
+
+Descriptive Statistics: Summarized the dataset's key features and provided fundamental understanding.
+
+Trend Analysis: Identified patterns in movie production and reception over time.
+
+Comparative Analysis: Compared critical and audience reception across genres and directorial styles.
+
+### Data Validation
+
+Data integrity was paramount, ensuring accuracy and consistency throughout the analysis. This involved data cleaning, missing value detection, and harmonization of data formats.
+
+### Data Preparation and Visualization
+
+The dataset underwent a rigorous preparation process, including cleansing, normalization, and transformation. Power BI dashboards were meticulously designed to visualize the data, revealing trends, patterns, and outliers across various facets of the film industry.
+
+
+
+![Image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/05d08338-668a-449a-9ef9-17753cca339e)
+
+
+
+![Image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/99fc028c-1e96-4b02-844a-aaa138b8f423)
+
+
+
+![Image](https://github.com/tuerkerme/Cinematic_Clash--Production_vs._Perception/assets/149696414/1b169fec-22f5-41fa-981d-3cb32935247a)
+
+
+## Findings
+
+Production Trends: The number of films produced annually has grown significantly, indicating a thriving industry. Major studios like Warner Bros. Pictures and Paramount Pictures hold a dominant position in production volume.
+
+Critical and Audience Reception: Critics and audiences often have differing opinions on films, with some critically acclaimed films receiving lower audience scores and vice versa. Despite being the most produced genres, Drama and Comedy do not always correlate with higher critical or audience scores.
+
+Directorial Impact: While some directors produce a high volume of films, their average critical scores vary, suggesting that quantity does not guarantee quality. Directors like Alfred Hitchcock and Steven Spielberg maintain high production counts and above-average critical scores.
+
+Genre Popularity and Reception: Drama and Comedy genres are the most produced, but this does not necessarily translate to higher critical or audience scores. The discrepancy between popularity and perceived quality may reflect genre preferences and critical standards.
+
+Audience Engagement: Audience scores often differ from critic scores, indicating divergent criteria between critics and general audiences. Blockbuster films tend to attract a significant number of audience reviews, highlighting the link between marketing reach and audience participation.
+
+## Limitations
+
+Data Limitations: Incomplete data and potential biases in reviews may lead to an incomplete understanding of the industry.
+
+Methodological Limitations: The analysis is a static snapshot, not capturing temporal changes in audience tastes and critical standards. Subjective interpretation of visual data may require qualitative analysis for context.
+
+## Recommendations
+
+For Filmmakers: Diversify genres beyond the most popular to stand out in the competitive market. Engage with the audience to understand their preferences and gather feedback.
+
+For Studios:  Leverage data analytics to inform production and marketing strategies. Stay abreast of changing audience preferences and critical expectations.
+
+For Critics and Review Platforms: Reassess review processes to better align with audience perceptions.
+
+## Conclusion and Summary
+
+The analysis of Rotten Tomatoes data using Power BI has provided valuable insights into the film industry's dynamics. It reveals a growing industry with complex reception patterns, where studio and director dominance does not guarantee film success. The divergence between critical and audience reception highlights the multifaceted nature of film appreciation. The report emphasizes the importance of data-driven decision-making in the film industry and encourages future research with longitudinal studies and wider datasets to gain a more comprehensive understanding of the industry.
