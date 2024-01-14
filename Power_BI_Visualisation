@@ -1,0 +1,66 @@
+
+## Project Overview
+
+Title: Cinematic Clash Production vs. Perception
+
+Objective: To conduct a thorough examination of the film industry's dynamics, including movie production trends, critical reception, audience preferences, and historical evolution.
+
+Tools Used: Power BI, a business intelligence tool that transforms raw data into meaningful insights through interactive visualizations.
+
+Scope of Analysis:
+
+Movie Production Trends: Analyze the number of films produced over time and identify leading production studios.
+
+Critical Reception: Assess the critical success of films and directors across various genres.
+
+Audience Engagement: Study audience scores and preferences to understand viewer behaviors.
+
+Directorial Impact: Evaluate the productivity and critical acclaim of directors in shaping the industry.
+
+Genre Popularity and Reception: Analyze the popularity and critical reception of different film genres.
+
+Data Sources:
+
+A comprehensive dataset of movie information obtained from Rotten Tomatoes, including titles, genres, production studios, audience and critic scores, and counts.
+
+Significance: The findings will provide valuable insights for industry stakeholders, including producers, directors, investors, and marketers, to inform strategic decision-making and historical understanding.
+
+Anticipated Findings:
+
+Identifying patterns in movie production and success factors.
+
+Understanding the correlation between critic and audience scores.
+
+Unveiling trends in the reception of different film genres.
+
+Intended Audience:
+
+Film industry stakeholders, including production companies, directors, marketing professionals, industry analysts, academia, and researchers.
+
+Data Analysis Framework:
+
+Data preparation
+
+Exploratory data analysis
+
+Statistical analysis
+
+Hypothesis testing
+
+Visualizations:
+
+Power BI visualizations will illustrate findings and support conclusions.
+
+Deliverables:
+
+Comprehensive report detailing findings, supported by visualizations.
+
+Interactive Power BI dashboard for data exploration.
+
+Project Duration:
+
+[Insert estimated duration here] weeks/months
+
+Report Structure:
+
+Clear and organized structure for easy navigation and comprehension.
